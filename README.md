@@ -16,7 +16,7 @@ does not produce any apparently visible noise or halo artifacts.
 Currently, it is one of the fastest image dehazing methods.
 
 The CEP is described in T. M. Bui, and W. Kim, "Single Image Dehazing Using Color Ellipsoid Prior", submitted 
-in IEEE transaction on Image processing, 2017.
+to IEEE transaction on Image processing, 2017.
 
 
 # Download
