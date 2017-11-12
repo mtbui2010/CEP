@@ -1,4 +1,4 @@
-# Single Image Dehazing Using Color Ellipsoid Prior
+# Dehazing Results using Color Ellipsoid Prior
 By Trung Minh Bui, and Wonha Kim IEEE Senior Member 
 
 College of Electronics and Information, 
