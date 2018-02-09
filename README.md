@@ -21,6 +21,7 @@ to IEEE transaction on Image processing, 2017.
 
 # Download
 [IMAGES] https://drive.google.com/file/d/0B6VA9ZgxISJcV0lQd2x3REdDejA/view?usp=sharing
+[CODE] https://drive.google.com/open?id=0B6VA9ZgxISJcWFJMX3h4T244UnM
 # Dehazing results
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 # Input "Lake" image
