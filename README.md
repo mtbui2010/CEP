@@ -43,9 +43,9 @@ IEEE transaction on Image processing, 2018.
 	Run command window
 	cd ./$BIN_CONFIG_ROOT$ (e.g. .\Releasex86)
 	run command: dehaze_demo image_path (options)
-		-f: use fast transmission estimation (default: normal estimation estimation
+		-f: use fast transmission estimation (default: normal estimation estimation)
 		-p: use the input parameters (default: use default parameters)
-		-a: use the input atmospheric light params (default: use the estimated atmospheric light
+		-a: use the input atmospheric light params (default: use the estimated atmospheric light)
 		
 	Example: 	dehaze_demo ..\..\tree.bmp
 			dehaze_demo ..\..\tree.bmp -f 
