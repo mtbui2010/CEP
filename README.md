@@ -1,5 +1,5 @@
 # Dehazing Results using Color Ellipsoid Prior
-By Trung Minh Bui, and Wonha Kim IEEE Senior Member 
+By Trung Minh Bui, Student Member, IEEE, and Wonha Kim Senior Member, IEEE
 
 College of Electronics and Information, 
 
