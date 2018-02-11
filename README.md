@@ -48,8 +48,8 @@ IEEE transaction on Image processing, 2018.
 		-a: use the input atmospheric light params (default: use the estimated atmospheric light
 		
 	Example: 	dehaze_demo ..\..\tree.bmp
-				dehaze_demo ..\..\tree.bmp -f 
-				dehaze_demo ..\..\tree.bmp -f -p -a
+			dehaze_demo ..\..\tree.bmp -f 
+			dehaze_demo ..\..\tree.bmp -f -p -a
         
 # Usage of dehazing library
 	We provide pre-compiled dehazing library including: 
