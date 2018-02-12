@@ -44,12 +44,20 @@ IEEE transaction on Image processing, 2018.
 	cd ./$BIN_CONFIG_ROOT$ (e.g. .\Releasex86)
 	run command: dehaze_demo image_path (options)
 		-f: use fast transmission estimation (default: normal estimation estimation)
-		-p: use the input parameters (default: use default parameters)
 		-a: use the input atmospheric light params (default: use the estimated atmospheric light)
-		
+		-p: use the input parameters (default: use default parameters) including
+			filter kernel size (default 21x21)
+			smoothing degree (default 0.002): 
+				value is usually in range(0.0001, 0.01)
+				smaller value, preventing halo artifact better but less contrast
+				bigger value, halo artifact may be apparent but more contrast.
+			dehazing weight (defaul 0.95)
+				value is smaller than 1 but closed to 1, usually in range (0.8,1)
+				bigger value, stronger dehazing affect
+
 	Example: 	dehaze_demo ..\..\tree.bmp
-			dehaze_demo ..\..\tree.bmp -f 
-			dehaze_demo ..\..\tree.bmp -f -p -a
+				dehaze_demo ..\..\tree.bmp -f 
+				dehaze_demo ..\..\tree.bmp -f -p -a
         
 # Usage of dehazing library
 	We provide pre-compiled dehazing library including: 
