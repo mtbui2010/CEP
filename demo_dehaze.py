@@ -41,6 +41,8 @@ class CEP():
         self.air_top_n = 0.001
         self.fast_trans_estimate = True
         self.show_airlight_loc = True
+        self.show_trans_gray = True
+        self.show_trans_jet = True
 
     def enhance_rgb(self, rgb):
         tt = time()
@@ -59,6 +61,11 @@ class CEP():
             t = self.estimate_trans_fast(rgb, (air_r, air_g, air_b))
         else:
             t = self.estimate_trans(rgb, (air_r, air_g, air_b))
+            
+        if self.show_trans_gray:
+            cv2.imshow('transmission', (255*t).astype('uint8'))
+        if self.show_trans_jet:
+            cv2.imshow('transmission jet', cv2.applyColorMap((255*t).astype('uint8'), cv2.COLORMAP_JET))
 
         # dehaze
         out = np.zeros(rgb.shape, self.data_type)
