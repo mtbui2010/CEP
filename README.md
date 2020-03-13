@@ -29,46 +29,10 @@ IEEE transaction on Image processing, 2018.
 	doi={10.1109/TIP.2017.2771158}, 
 	ISSN={1057-7149}, 
 	month={Feb},}
+	
+# Implementations:
+  This work was updated on Python. User can also download the C and Matlab implementations at https://drive.google.com/open?id=1zayS43gNWZi4cx4pxUTgRMLRUaWo7mM9
 
-# Download
-[IMAGES] https://drive.google.com/file/d/0B6VA9ZgxISJcV0lQd2x3REdDejA/view?usp=sharing
-
-[CODE] [UPDATE] Matlab code included 
-https://drive.google.com/open?id=1zayS43gNWZi4cx4pxUTgRMLRUaWo7mM9
-
-
-
-# Requirements: 
-	This code has been tested on Window 10 32bit and 64bit, 
-	using Microsoft Visual studio 2013 and opencv version 2.4.13.
-  
-# Demo:
-	Run command window
-	cd ./$BIN_CONFIG_ROOT$ (e.g. .\Releasex86)
-	run command: dehaze_demo image_path (options)
-		-f: use fast transmission estimation (default: normal estimation estimation)
-		-a: use the input atmospheric light params (default: use the estimated atmospheric light)
-		-p: use the input parameters (default: use default parameters) including
-			filter kernel size (default 21x21)
-			smoothing degree (default 0.002): 
-				value is usually in range(0.0001, 0.01)
-				smaller value, preventing halo artifact better but less contrast
-				bigger value, halo artifact may be apparent but more contrast.
-			dehazing weight (defaul 0.95)
-				value is smaller than 1 but closed to 1, usually in range (0.8,1)
-				bigger value, stronger dehazing affect
-
-	Example: 	dehaze_demo ..\..\tree.bmp
-			dehaze_demo ..\..\tree.bmp -f 
-			dehaze_demo ..\..\tree.bmp -f -p -a
-        
-# Usage of dehazing library
-	We provide pre-compiled dehazing library including: 
-		dehaze_lib.dll in .\bin\$BIN_CONFIG_ROOT$
-		dehaze_lib.lib in .\lib\$PLATFORM$
-		dehaze_lib.h in \include
-	The library includes 4 member funcitons: est_air, est_trans_fast, est_trans, rmv_haze 
-	To know how to use dehazing library, please refer the dehaze_demo project and demo.cpp file.
   
 # Dehazing results
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
